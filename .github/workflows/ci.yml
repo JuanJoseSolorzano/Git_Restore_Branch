@@ -40,3 +40,14 @@ jobs:
                 fileName=$(ls -1 *.vsix | head -n 1)
                 echo "VSIX_FILE=$file_name" >> $GITHUB_ENV
                 echo "$fileName"
+
+            - name: GitHub Release
+              uses: softprops/actions-gh-release@v1
+              with:
+                files: ${{ env.VSIX_FILE }}
+                body: "New release of Git Restore Branch"
+                draft: false
+                prerelease: false
+              env:
+                GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
