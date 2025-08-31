@@ -1,0 +1,27 @@
+{
+    "name": "git-restore-branch",
+    "displayName": "Git Restore Branch",
+    "description": "A Git Tool to help you restore your working project at any point in time in a safe and efficient manner.",
+    "version": "1.0.0",
+    "publisher": "Solorzano-JuanJose",
+    "icon": "images/icon.jpg",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Visualization"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.GitRestoreBranch",
+                "title": "Git Restore Branch"
+            }
+        ]
+    },
+    "script": {},
+    "dependencies": {
+        "adm-zip": "^0.5.16"
+    }
+}
