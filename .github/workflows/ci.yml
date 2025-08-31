@@ -40,6 +40,7 @@ jobs:
                 fileName=$(ls -1 *.vsix | head -n 1)
                 echo "VSIX_FILE=$file_name" >> $GITHUB_ENV
                 echo "$fileName"
+                echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
 
             - name: GitHub Release
               uses: softprops/action-gh-release@v1
