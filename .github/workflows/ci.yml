@@ -34,3 +34,8 @@ jobs:
                 cd $GITHUB_WORKSPACE
                 ls
                 vsce package
+            
+            - name: Get File name
+              run: |
+                fileName=$(ls -1 *.vsix | head -n 1)
+                echo "$fileName"
