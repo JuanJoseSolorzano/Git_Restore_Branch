@@ -31,6 +31,7 @@ jobs:
 
             - name: vsce package
               run: vsce package
+
             - name: Get extension name
               run: |
                 fileName=$(ls -1 *.vsix | head -n 1)
