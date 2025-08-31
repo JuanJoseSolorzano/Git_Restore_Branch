@@ -38,4 +38,5 @@ jobs:
             - name: Get File name
               run: |
                 fileName=$(ls -1 *.vsix | head -n 1)
+                echo "VSIX_FILE=$file_name" >> $GITHUB_ENV
                 echo "$fileName"
