@@ -30,6 +30,7 @@ jobs:
               run: npm install -g vsce
 
             - name: vsce package
-              run: vsce package
-
-            
+              run: | 
+                cd $GITHUB_WORKSPACE
+                ls
+                vsce package
