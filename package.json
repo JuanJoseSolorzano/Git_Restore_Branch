@@ -4,7 +4,8 @@
     "description": "A Git Tool to help you restore your working project at any point in time in a safe and efficient manner.",
     "version": "1.0.0",
     "publisher": "Solorzano-JuanJose",
-    "icon": "images/icon.jpg",
+    "repository": {"type": "git","url": "https://github.com/JuanJoseSolorzano/Git_Restore_Branch.git"},
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.80.0"
     },
@@ -20,7 +21,7 @@
             }
         ]
     },
-    "script": {},
+    "scripts": {},
     "dependencies": {
         "adm-zip": "^0.5.16"
     }
