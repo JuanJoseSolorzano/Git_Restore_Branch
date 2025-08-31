@@ -31,3 +31,8 @@ jobs:
 
             - name: vsce package
               run: vsce package
+            - name: Get extension name
+              run: |
+                fileName=$(ls -1 *.vsix | head -n 1)
+                echo "VSIX_FILE=$fileName" >> $GITHUB_ENV 
+                echo "${{ GITHUB_ENV }}"
