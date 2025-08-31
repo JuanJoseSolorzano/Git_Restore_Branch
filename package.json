@@ -1,7 +1,7 @@
 {
     "name": "git-restore-branch",
     "displayName": "Git Restore Branch",
-    "description": "A Git Tool to help you restore your working project at any point in time in a safe and efficient manner.",
+    "description": "Safely restore GitHub branches from VS Code. Quickly roll back any branch to a specific commit with the Git Restore Branch command—without losing your work. Perfect for learning Git or fixing mistakes with confidence.",
     "version": "1.0.0",
     "publisher": "Solorzano-JuanJose",
     "repository": {"type": "git","url": "https://github.com/JuanJoseSolorzano/Git_Restore_Branch.git"},
